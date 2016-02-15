@@ -4,7 +4,7 @@
 
 There just a few things to add *most* **importantly** the code for the programs:
 
-'''python
+```python
 n = int(raw_input())
 
 marks={}
@@ -18,7 +18,7 @@ name = str(raw_input())
 a,b,c=marks[name]
 d = (a+b+c)/3
 print("{0:.2f}".format(d))
-'''
+```
 
 so we got it, ...
 
