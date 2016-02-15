@@ -21,16 +21,10 @@ Guideline: You can copy the value of ee to a variable and consider its cell "emp
 2 4 6 8 3  
 
 **Sample Solution:**  
-
-2 4 6 8 8
- 
-2 4 6 6 8 
-
-2 4 4 6 8 
-
-2 3 4 6 8 
-
-
+2 4 6 8 8  
+2 4 6 6 8  
+2 4 4 6 8  
+2 3 4 6 8  
 
 **Solution:**
 ```python
