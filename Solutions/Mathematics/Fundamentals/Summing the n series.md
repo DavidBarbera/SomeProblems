@@ -15,7 +15,7 @@ Find S<sub>n</sub>mod(10<sup>9</sup>+7).
 2  
 1  
 
-**Sample Output:**
+**Sample Output:**  
 4  
 1  
 
