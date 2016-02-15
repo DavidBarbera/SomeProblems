@@ -4,23 +4,23 @@
 **Problem**  |
 -------------|
 You are given a sequence whose *n<sup>th</sup>* term is  |
-T<sub>n</sub>=n<sup>2</sup>-(n-1)<sup>2</sup>  |
+T<sub>n</sub>=n<sup>2</sup>-(n-1)<sup>2</sup>  
 
-You have to evaluate the series  |
-S<sub>n</sub>=T<sub>1</sub>+T<sub>2</sub>+T<sub>3</sub>+...+T<sub>n</sub>  |
+You have to evaluate the series  
+S<sub>n</sub>=T<sub>1</sub>+T<sub>2</sub>+T<sub>3</sub>+...+T<sub>n</sub>  
 
-Find S<sub>n</sub>mod(10<sup>9</sup>+7).  |
+Find S<sub>n</sub>mod(10<sup>9</sup>+7).  
 
 |**Sample Input:**|
 |-----------------|  
 |2  |
-|2  |
-|1  |
+2  
+1  
 
 |**Sample Output:**  
 |--------------------
 |4  
-|1  
+1  
 
 **Solution:**  
 ```python
