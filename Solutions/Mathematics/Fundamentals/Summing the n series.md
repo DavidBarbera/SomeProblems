@@ -2,13 +2,13 @@
 *Score: 20*
 
 **Problem**  
-You are given a sequence whose *n<sup>th<\sup>* term is
-Tn=n2-(n-1)2
-Tn=n2-(n-1)2
+You are given a sequence whose *n<sup>th</sup>* term is
+T<sub>n</sub>=n<sup>2</sup>-(n-1)<sup>2</sup>
+T<sub>n</sub>=n<sup>2</sup>-(n-1)<sup>2</sup>
 You have to evaluate the series
-Sn=T1+T2+T3+?+Tn
-Sn=T1+T2+T3+?+Tn
-Find Snmod(109+7)Snmod(109+7).
+S<sub>n</sub>=T<sub>1</sub>+T<sub>2</sub>+T<sub>3</sub>+?+T<sub>n</sub>
+S<sub>n</sub>=T<sub>1</sub>+T<sub>2</sub>+T<sub>3</sub>+?+T<sub>n</sub>
+Find S<sub>n</sub>mod(10<sup>9</sup>+7)S<sub>n</sub>mod(10<sup>9</sup>+7).
 
 ```python
 #python 2
