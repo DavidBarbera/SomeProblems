@@ -18,10 +18,8 @@ Print the array every time a value is shifted in the array until the array is fu
 Guideline: You can copy the value of ee to a variable and consider its cell "empty". Since this leaves an extra cell empty on the right, you can shift everything over until VV can be inserted. This will create a duplicate of each value, but when you reach the right spot, you can replace it with ee.
 
 **Sample Input:**
-
-5
-
-2 4 6 8 3
+5 \
+2 4 6 8 3\
 
 **Sample Solution:**
 

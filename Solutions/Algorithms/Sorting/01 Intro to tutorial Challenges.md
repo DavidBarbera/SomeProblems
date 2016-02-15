@@ -13,7 +13,7 @@ This is a simple challenge to get things started. Given a sorted array (arar) an
 1
 
 Solution:
-```pythong
+```python
 #(in Python 2)
 v, n = (int(input()) for _ in range(2))
 
