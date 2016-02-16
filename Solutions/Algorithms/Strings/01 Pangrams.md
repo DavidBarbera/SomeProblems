@@ -32,4 +32,4 @@ if len(s) == 26:
     print "pangram"
 else:
     print "not pangram"
-```
+```  

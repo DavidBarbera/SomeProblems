@@ -20,7 +20,8 @@ This is a simple challenge to get things started. Given a sorted array (ar) and 
 v, n = (int(input()) for _ in range(2))
 
 print map(int,raw_input().split(' ')).index(v)
-```
+```  
+
 #### 02 Insertion - Part 1
 *Score: 30*  
 
@@ -59,7 +60,8 @@ def insertionSort(ar):
 m = input()
 ar = [int(i) for i in raw_input().strip().split()]
 insertionSort(ar)
-```
+```  
+
 #### Insertion - Part 2
 *Score: 30*  
 
@@ -99,7 +101,8 @@ def insertionSort(ar):
 m = input()
 ar = [int(i) for i in raw_input().strip().split()]
 insertionSort(ar)
-```###Strings  
+```  
+###Strings  
 #### 01 Pangrams
 *Score: 30*
 
@@ -134,4 +137,4 @@ if len(s) == 26:
     print "pangram"
 else:
     print "not pangram"
-```
+```  

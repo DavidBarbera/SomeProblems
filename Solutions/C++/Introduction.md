@@ -82,7 +82,8 @@ int main () {
    }  
    return 0;
 }
-```####Variable Sized Arrays
+```  
+####Variable Sized Arrays
 *Score: 30*  
 
 **Problem**  
@@ -142,4 +143,4 @@ int main(){
       
 	return 0;
 }
-```
+```  

@@ -18,4 +18,5 @@ This is a simple challenge to get things started. Given a sorted array (ar) and 
 v, n = (int(input()) for _ in range(2))
 
 print map(int,raw_input().split(' ')).index(v)
-```
+```  
+
