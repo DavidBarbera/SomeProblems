@@ -62,4 +62,4 @@ mod = 10**9 + 7
 for l in xrange(tests):
     n=int(raw_input().strip())
     print (n**2) % mod  
-```
+```  
