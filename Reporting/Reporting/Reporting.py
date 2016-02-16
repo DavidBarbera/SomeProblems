@@ -33,6 +33,7 @@ for d in domains:
         spath = "%s\%s" % (dpath,s)
         SectionReportName = "%s\%s.md" % (dpath,s)
         freportSection = open(SectionReportName,'w')
+        freportSection.write( "###%s" % s )
         print spath
         for file in os.listdir(spath):
             if file.endswith(".md"):
