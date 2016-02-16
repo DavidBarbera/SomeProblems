@@ -55,24 +55,43 @@ for d in domains:
 
 path = getpath()
 domains = onlydirectories(path)
-print domains
+#print domains
 
 for d in domains:
     dpath = "%s\%s" % (path,d)
     DomainReportName = "%s\%s.md" % (path,d)
-    print DomainReportName
+    #print DomainReportName
     freportDomain = open(DomainReportName, 'w')
     freportDomain.write( "##%s   \n" % d )
     #print os.listdir(dpath)
-    print dpath
+    #print dpath
     files = onlyfiles(dpath)
-    print files
+    #print files
     for f in files:
-         
          #if f.endsiwth(".md"):
             filepath = "%s\%s" % (dpath,f)
-            print filepath
+            #print filepath
             fsection = open(filepath,'r')
             [freportDomain.write(line) for line in fsection.readlines()]
             fsection.close()
     freportDomain.close()
+
+#print domains
+print path
+
+lreadmepath=path.split("\\")
+lreadmepath.pop()
+readmepath= "\\".join(lreadmepath)
+print readmepath
+readmeFile = "%s\Readme.md" % readmepath
+freadme = open(readmeFile,'w')
+
+for x in os.listdir(path):
+    if x.endswith(".md"):
+        fpath = "%s\%s" % (path,x)
+        fdomain = open(fpath,'r')
+        [freadme.write(line) for line in fdomain.readlines()]
+        fdomain.close()
+
+freadme.close()
+
