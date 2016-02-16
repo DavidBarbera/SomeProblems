@@ -1,4 +1,5 @@
-###Fundamentals####Sherlock and Permutations  
+###Fundamentals  
+####Sherlock and Permutations  
 *Score: 20*  
 **Problem:**  
 Watson asks Sherlock: 

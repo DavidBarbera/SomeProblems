@@ -1,4 +1,5 @@
-###Strings#### 01 Pangrams
+###Strings  
+#### 01 Pangrams
 *Score: 30*
 
 **Problem**  
