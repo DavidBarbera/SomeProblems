@@ -1,4 +1,5 @@
 ##Mathematics   
+*##Domain Score: 40*  
 ###Fundamentals  
 ###*Section Score: 40*  
 ####Sherlock and Permutations  

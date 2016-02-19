@@ -57,7 +57,7 @@ for d in domains:
                # print sScore
                 fproblem.close()
         freportSection.write("###*Section Score: %d*  \n" % sScore)
-        print sScore
+        #print sScore
 
         for file in os.listdir(spath):
             if file.endswith(".md"):
@@ -85,10 +85,21 @@ for d in domains:
     #print dpath
     files = onlyfiles(dpath)
     #print files
-    for f in files:
+    dScore = 0
+    for f in files:   #loop to sum up scores only
          #if f.endsiwth(".md"):
             filepath = "%s\%s" % (dpath,f)
             #print filepath
+            fsection = open(filepath,'r')
+            sline = fsection.readline()
+            sline = fsection.readline()
+            sline = sline.replace('*','')
+            sline = sline.replace("###Section Score: ",'')
+            dScore += int(sline)
+            fsection.close()
+    freportDomain.write("*##Domain Score: %d*  \n" % dScore)           
+
+    for f in files:
             fsection = open(filepath,'r')
             [freportDomain.write(line) for line in fsection.readlines()]
             fsection.close()
