@@ -1,4 +1,5 @@
 ###Strings  
+###*Section Score: 30*  
 #### 01 Pangrams
 *Score: 30*
 

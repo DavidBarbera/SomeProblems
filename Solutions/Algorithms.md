@@ -1,5 +1,6 @@
 ##Algorithms   
 ###Sorting  
+###*Section Score: 90*  
 ####01 Intro to Tutorial Challenges
 *Score: 30*
 
@@ -103,6 +104,7 @@ ar = [int(i) for i in raw_input().strip().split()]
 insertionSort(ar)
 ```  
 ###Strings  
+###*Section Score: 30*  
 #### 01 Pangrams
 *Score: 30*
 

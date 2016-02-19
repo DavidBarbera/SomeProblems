@@ -6,6 +6,7 @@ There we go:
 
 ##Algorithms   
 ###Sorting  
+###*Section Score: 90*  
 ####01 Intro to Tutorial Challenges
 *Score: 30*
 
@@ -109,6 +110,7 @@ ar = [int(i) for i in raw_input().strip().split()]
 insertionSort(ar)
 ```  
 ###Strings  
+###*Section Score: 30*  
 #### 01 Pangrams
 *Score: 30*
 
@@ -146,6 +148,7 @@ else:
 ```  
 ##C++   
 ###Introduction  
+###*Section Score: 55*  
 ####Operator Overloading
 *Score: 25*
 
@@ -293,6 +296,7 @@ int main(){
 ```  
 ##Mathematics   
 ###Fundamentals  
+###*Section Score: 40*  
 ####Sherlock and Permutations  
 *Score: 20*  
 **Problem:**  

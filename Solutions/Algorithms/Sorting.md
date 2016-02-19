@@ -1,4 +1,5 @@
 ###Sorting  
+###*Section Score: 90*  
 ####01 Intro to Tutorial Challenges
 *Score: 30*
 

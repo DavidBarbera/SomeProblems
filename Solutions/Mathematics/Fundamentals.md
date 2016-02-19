@@ -1,4 +1,5 @@
 ###Fundamentals  
+###*Section Score: 40*  
 ####Sherlock and Permutations  
 *Score: 20*  
 **Problem:**  

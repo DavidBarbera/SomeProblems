@@ -43,11 +43,29 @@ for d in domains:
         freportSection = open(SectionReportName,'w')
         freportSection.write( "###%s  \n" % s )
        # print spath
+        sScore = 0
         for file in os.listdir(spath):
             if file.endswith(".md"):
                 filepath = "%s\%s" % (spath,file)
                 fproblem = open(filepath,'r')
                 #print filepath
+                line = fproblem.readline()
+                line = fproblem.readline()
+                line = line.replace('*','')
+                line = line.replace("Score:",'')
+                sScore += int(line)
+               # print sScore
+                fproblem.close()
+        freportSection.write("###*Section Score: %d*  \n" % sScore)
+        print sScore
+
+        for file in os.listdir(spath):
+            if file.endswith(".md"):
+                filepath = "%s\%s" % (spath,file)
+                fproblem = open(filepath,'r')
+                #print filepath
+                
+                fproblem = open(filepath,'r')
                 freportSection.write(fproblem.read())
                 fproblem.close()
         freportSection.close()
@@ -77,12 +95,11 @@ for d in domains:
     freportDomain.close()
 
 #print domains
-print path
+#print path
 
 lreadmepath=path.split("\\")
 lreadmepath.pop()
 readmepath= "\\".join(lreadmepath)
-print readmepath
 readmeFile = "%s\Readme.md" % readmepath
 freadme = open(readmeFile,'w')
 
