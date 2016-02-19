@@ -75,12 +75,18 @@ path = getpath()
 domains = onlydirectories(path)
 #print domains
 
+TotalScore = 0
+ScoreReportName = "%s\AAScoresReport.md" % path
+fScoresReport = open(ScoreReportName, 'w')
+fScoresReport.write("| Domain                   | Score         |  \n")
+fScoresReport.write("|--------------------------|---------------|  \n")
 for d in domains:
     dpath = "%s\%s" % (path,d)
     DomainReportName = "%s\%s.md" % (path,d)
     #print DomainReportName
     freportDomain = open(DomainReportName, 'w')
     freportDomain.write( "##%s   \n" % d )
+   
     #print os.listdir(dpath)
     #print dpath
     files = onlyfiles(dpath)
@@ -97,16 +103,27 @@ for d in domains:
             sline = sline.replace("###Section Score: ",'')
             dScore += int(sline)
             fsection.close()
-    freportDomain.write("*##Domain Score: %d*  \n" % dScore)           
+    freportDomain.write("##*Domain Score: %d*  \n" % dScore)
+    fScoresReport.write("| %s                   | %d         |  \n" %(d,dScore))
+    TotalScore += dScore         
 
     for f in files:
             fsection = open(filepath,'r')
             [freportDomain.write(line) for line in fsection.readlines()]
             fsection.close()
     freportDomain.close()
+    print path
+fScoresReport.write("| Total                   | %d         |  \n" % TotalScore )
+fScoresReport.close()
+
 
 #print domains
 #print path
+
+#Creates file with domains scores sorted in a table
+#domainScores = "%s\AAScores
+
+
 
 lreadmepath=path.split("\\")
 lreadmepath.pop()

@@ -4,8 +4,14 @@ This is a report on the experience solving some problems around the net.
 
 There we go:  
 
+| Domain                   | Score         |  
+|--------------------------|---------------|  
+| Algorithms                   | 120         |  
+| C++                   | 55         |  
+| Mathematics                   | 40         |  
+| Total                   | 215         |  
 ##Algorithms   
-*##Domain Score: 120*  
+##*Domain Score: 120*  
 ###Strings  
 ###*Section Score: 30*  
 #### 01 Pangrams
@@ -81,7 +87,7 @@ else:
     print "not pangram"
 ```  
 ##C++   
-*##Domain Score: 55*  
+##*Domain Score: 55*  
 ###Introduction  
 ###*Section Score: 55*  
 ####Operator Overloading
@@ -230,7 +236,7 @@ int main(){
 }
 ```  
 ##Mathematics   
-*##Domain Score: 40*  
+##*Domain Score: 40*  
 ###Fundamentals  
 ###*Section Score: 40*  
 ####Sherlock and Permutations  

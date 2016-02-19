@@ -1,5 +1,5 @@
 ##Algorithms   
-*##Domain Score: 120*  
+##*Domain Score: 120*  
 ###Strings  
 ###*Section Score: 30*  
 #### 01 Pangrams
