@@ -112,8 +112,8 @@ for d in domains:
             [freportDomain.write(line) for line in fsection.readlines()]
             fsection.close()
     freportDomain.close()
-    print path
-fScoresReport.write("| Total                   | %d         |  \n" % TotalScore )
+    #print path
+fScoresReport.write("| *Total*                   | *%d*         |  \n" % TotalScore )
 fScoresReport.close()
 
 

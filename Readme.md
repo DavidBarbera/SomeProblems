@@ -9,7 +9,7 @@ There we go:
 | Algorithms                   | 120         |  
 | C++                   | 55         |  
 | Mathematics                   | 40         |  
-| Total                   | 215         |  
+| *Total*                   | *215*         |  
 ##Algorithms   
 ##*Domain Score: 120*  
 ###Strings  
