@@ -107,7 +107,7 @@ for d in domains:
     fScoresReport.write("| %s                   | %d         |  \n" %(d,dScore))
     TotalScore += dScore         
 
-    for f in files:
+    for fr in files:
             fsection = open(filepath,'r')
             [freportDomain.write(line) for line in fsection.readlines()]
             fsection.close()
