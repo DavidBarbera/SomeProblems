@@ -2,6 +2,6 @@
 |--------------------------|---------------|  
 | Algorithms                   | 120         |  
 | C++                   | 55         |  
-| Mathematics                   | 40         |  
+| Mathematics                   | 60         |  
 | Python                   | 215         |  
-| *Total*                   | *430*         |  
+| *Total*                   | *450*         |  
