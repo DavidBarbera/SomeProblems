@@ -1,5 +1,262 @@
 ###Introduction  
-###*Section Score: 85*  
+###*Section Score: 155*  
+####Arrays Introduction  
+*Score: 10*  
+**Problem**  
+You'll be an given array of *N* integers and you have to print the integers in the reverse order.
+
+**Solution**  
+```C++
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    int n,a,s;
+    int arr[1000];
+    cin >> n;
+    for(int i=0;i<n;i++) {
+        s=scanf("%d",&a);
+        arr[i]=a;
+    }
+    for(int i=n-1;i>=0;i--)
+        printf("%d ",arr[i]);
+    
+    return 0;
+}
+
+```  
+####Basic Data Types  
+*Score: 10*  
+**Problem**  
+Read and array of different types and return the elements, each in a new line.  
+
+**Sample Input**  
+3 444 12345678912345 a 334.23 14049.30493  
+**Sample Output**  
+3  
+444  
+12345678912345  
+a  
+334.23  
+14049.30493  
+
+
+**Solution**  
+```C++
+#include <iostream>
+#include <cstdio>
+using namespace std;
+
+int main() {
+    // Complete the code.
+    int i=0;
+    long int li=0;
+    long long int ll=0;
+    char c=' ';
+    float f=0.0;
+   double fl=0.0;
+    int s;
+    
+    s=scanf("%d %ld %lld %c %f %lf",&i,&li,&ll,&c,&f,&fl);
+    printf("%d\n%ld\n%lld\n%c\n%.2f\n%.5lf",i,li,ll,c,f,fl);
+    
+    
+    return 0;
+}
+```  
+####Conditional Statements  
+*Score: 10*  
+**Problem**  
+You are given a positive integer, *n*,:  
+
+If *1=n=9*, then print the English representation of it. That is "one" for *1*, "two" for *2*, and so on.
+Otherwise print "Greater than 9" (without quotes).  
+
+
+**Solution**  
+```C++
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */  
+    int n=0;
+    
+    cin >> n;
+    
+    switch(n) {
+        case 1: cout << "one";
+            break;
+        case 2: cout << "two";
+            break;
+        case 3: cout << "three";
+            break;
+        case 4: cout << "four";
+            break;
+        case 5: cout << "five";
+            break;
+        case 6: cout << "six";
+            break;
+        case 7: cout << "seven";
+            break;
+        case 8: cout << "eight";
+            break;
+        case 9: cout << "nine";
+            break;
+        default: cout << "Greater than 9";
+    }
+ 
+   return 0;
+}
+```  
+####For Loop  
+*Score: 10*  
+**Problem** 
+You will be given two positive integers, *a* and *b* (*a=b*), separated by a newline.  
+For each integer n in [a,b] (so all numbers in that range):  
+*If *1=n=9*, then print the English representation of it. That is "one" for 1, "two" for 2, and so on.  
+*Else if *n>9* and it is even, then print "even".  
+*Else if *n>9* and it is odd, then print "odd".  
+
+
+**Solution**  
+```C++
+#include <iostream>
+#include <cstdio>
+using namespace std;
+
+int main() {
+    // Complete the code.
+    int a,b;
+    cin >> a;
+    cin >> b;
+    
+
+    for(int n = a; n <= b; n++ ) {
+        //printf("%i\n",n);
+
+    if( (n)>=1 && (n)<=b) {
+    switch(n) {
+        case 1: cout << "one\n";
+            break;
+        case 2: cout << "two\n";
+            break;
+        case 3: cout << "three\n";
+            break;
+        case 4: cout << "four\n";
+            break;
+        case 5: cout << "five\n";
+            break;
+        case 6: cout << "six\n";
+            break;
+        case 7: cout << "seven\n";
+            break;
+        case 8: cout << "eight\n";
+            break;
+        case 9: cout << "nine\n";
+            break;
+        default: if((n)%2==0) {
+                 cout << "even\n";
+                  } else {
+                 cout << "odd\n";
+                  }
+             }
+    } 
+    }
+    return 0;
+}
+```  
+####Functions  
+*Score: 10*  
+**Problem**  
+You have to write a function *int max_of_four(int a, int b, int c, int d)* which reads four arguments and returns the greatest of them.
+
+**Solution**  
+```C++
+#include <iostream>
+#include <cstdio>
+using namespace std;
+
+/*
+Add `int max_of_four(int a, int b, int c, int d)` here.
+*/
+int max(int a,int b) {
+   
+    if(a <= b) {
+       return b;
+    } else {
+      return a;
+    }
+   
+}
+
+int max_of_four(int a, int b, int c, int d) {
+    int max1, max2;
+    max1 = max(a,b);
+    max2 = max(c,d);
+    
+    return max(max1,max2);
+}
+
+int main() {
+    int a, b, c, d,s;
+    s=scanf("%d %d %d %d", &a, &b, &c, &d);
+    int ans = max_of_four(a, b, c, d);
+    printf("%d", ans);
+    
+    return 0;
+}
+```  
+####Hello World!  
+*Score: 5*  
+**Problem**  
+The must first program in any language.
+
+**Solution**  
+```C++
+#include <iostream>
+#include <cstdio>
+using namespace std;
+
+int main() {
+    printf("Hello, World!");
+    return 0;
+}
+```  
+####Input and Output  
+*Score: 5*  
+**Problem**  
+Take three numbers as inputs and print the sum of those three numbers.
+
+**Solution**  
+```C++
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    int a,b,c;
+    cin >> a >> b >> c;
+    cout<< a+b+c;
+    return 0;
+}
+```  
 ####Operator Overloading
 *Score: 25*
 
@@ -173,6 +430,39 @@ int main()
     cout<<z<<endl;
 }
 
+```  
+####Pointer  
+*Score: 10*  
+**Problem**  
+You have to complete the function *void update(int \*a,int \*b)*, which reads two integers as argument, and sets *a* with the sum of them, and *b* with the absolute difference of them.  
+
+**Solution**  
+```C++ 
+#include <stdio.h>
+
+void update(int *a,int *b) {
+    int sum, diff;
+    sum = (*a)+(*b);
+    if((*a)>=(*b)){
+        diff= (*a)-(*b);
+    } else {
+        diff=(*b)-(*a);
+    }
+    (*a)=sum;
+    (*b)=diff;
+    // Complete this function    
+}
+
+int main() {
+    int a, b,s;
+    int *pa = &a, *pb = &b;
+    
+    s=scanf("%d %d", &a, &b);
+    update(pa, pb);
+    printf("%d\n%d", a, b);
+
+    return 0;
+}
 ```  
 ####Variable Sized Arrays
 *Score: 30*  
