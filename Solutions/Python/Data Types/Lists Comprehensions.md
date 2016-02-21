@@ -8,7 +8,7 @@ You are given three integers *X,Y* and *Z* representing the dimensions of a cubo
 1  
 1  
 2  
-**Sample Output
+**Sample Output**  
 [[0, 0, 0], [0, 0, 1], [0, 1, 0], [1, 0, 0], [1, 1, 1]]  
 
 

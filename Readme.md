@@ -7,10 +7,10 @@ There we go:
 | Domain                   | Score         |  
 |--------------------------|---------------|  
 | Algorithms                   | 120         |  
-| C++                   | 55         |  
+| C++                   | 105         |  
 | Mathematics                   | 60         |  
 | Python                   | 215         |  
-| *Total*                   | *450*         |  
+| *Total*                   | *500*         |  
 ##Algorithms   
 ##*Domain Score: 120*  
 ###Sorting  
@@ -155,9 +155,9 @@ else:
     print "not pangram"
 ```  
 ##C++   
-##*Domain Score: 55*  
+##*Domain Score: 105*  
 ###Introduction  
-###*Section Score: 55*  
+###*Section Score: 85*  
 ####Operator Overloading
 *Score: 25*
 
@@ -242,6 +242,96 @@ int main () {
    return 0;
 }
 ```  
+####Overload Operators  
+*Score: 30*  
+**Problem**  
+You are given a class - *Complex*.
+```C++
+class Complex
+{
+public:
+    int a,b;
+};
+```  
+You need to overload operators *+* and *<<* for the *Complex* class.  
+
+The operator *+* should add complex numbers according to the rules of complex addition.  
+```c++
+(a+ib)+(c+id) = (a+c) + i(b+d)  
+```  
+
+Overload the stream insertion operator *<<* to add "*a+ib*" to the stream:
+```C++
+cout<<c<<endl;
+```  
+**Solution**  
+```C++
+//Operator Overloading
+#include<iostream>
+using namespace std;
+class Complex
+{
+public:
+    int a,b;
+    void input(string s)
+    {
+        int v1=0;
+        int i=0;
+        while(s[i]!='+')
+        {
+            v1=v1*10+s[i]-'0';
+            i++;
+        }
+        while(s[i]==' ' || s[i]=='+'||s[i]=='i')
+        {
+            i++;
+        }
+        int v2=0;
+        while(i<s.length())
+        {
+            v2=v2*10+s[i]-'0';
+            i++;
+        }
+        a=v1;
+        b=v2;
+    }
+Complex Complex::operator+(const Complex& rhs);
+void Complex::operator<<(const Complex& rhs);
+};
+//Overload operators + and << for the class complex
+//+ should add two complex numbers as (a+ib) + (c+id) = (a+c) + i(b+d)
+//<< should print a complex number in the format "a+ib"
+
+//There should be a prototype of both funcitons inside the class
+//Complex Complex::operator+(const Complex& rhs);
+//void Complex::operator<<(const Complex& rhs);
+
+//both functions definitions outside
+Complex Complex::operator+(const Complex& rhs){
+    Complex sum = *this;
+    sum.a= a + rhs.a;
+    sum.b= b + rhs.b;
+    
+    return sum;
+}
+void Complex::operator<<(const Complex& rhs) {
+    cout << rhs.a << "+i" << rhs.b;
+        
+}
+
+int main()
+{
+    Complex x,y;
+    string s1,s2;
+    cin>>s1;
+    cin>>s2;
+    x.input(s1);
+    y.input(s2);
+    Complex z=x+y;
+    cout<<z<<endl;
+}
+
+```  
 ####Variable Sized Arrays
 *Score: 30*  
 
@@ -302,6 +392,89 @@ int main(){
       
 	return 0;
 }
+```  
+###Strings  
+###*Section Score: 20*  
+####Strings  
+*Score: 10*  
+**Problem**  
+You are given two strings, *a* and *b*, separated by a new line. Each string will consist of lower case Latin characters ('a'-'z').  
+In the first line print two space-separated integers, representing the length of aa and bb respectively.  
+In the second line print the string produced by concatenating *a* and *b* (*a+b*). 
+In the third line print two strings separated by a space, *a'* and *b'*. *a'* and *b'* are the same as *a* and *b*, respectively, except that their first characters are swapped.  
+**Sample Input**  
+abcd  
+ef  
+**Sample Ouput**  
+4 2  
+abcdef  
+ebcd af  
+
+
+**Solution**  
+```C++
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+   // Complete the program
+  string s1,s2;
+    char c;
+    cin >> s1 >> s2;
+    cout << s1.size() << " " << s2.size() << endl;
+    cout << s1+s2 << endl;
+    c=s1[0];
+    s1[0]=s2[0];
+    s2[0]=c;
+    cout << s1 << " " << s2;
+    return 0;
+}
+```  
+####Stringstream  
+*Score: 10*  
+**Problem**  
+You have to complete the function *vector parseInts(string str)*. *str* will be a string consisting of comma-separated integers, and you have to return a vector of int representing the integers.
+**Sample Input**  
+23,4,56  
+**Sample Output**  
+23  
+4  
+56  
+
+**Solution**  
+```C++
+#include <sstream>
+#include <vector>
+#include <iostream>
+using namespace std;
+
+vector<int> parseInts(string str) {
+   // Complete this function
+    char c = 'c';
+    vector<int> arr;
+    stringstream ss(str);
+    int num;
+    
+    while( ss >> num >> c)
+        arr.push_back(num);
+    ss >> num;
+    arr.push_back(num);    
+     
+    return arr;
+}
+
+int main() {
+    string str;
+    cin >> str;
+    vector<int> integers = parseInts(str);
+    for(int i = 0; i < integers.size(); i++) {
+        cout << integers[i] << "\n";
+    }
+    
+    return 0;
+}
+
 ```  
 ##Mathematics   
 ##*Domain Score: 60*  
@@ -449,7 +622,7 @@ You are given three integers *X,Y* and *Z* representing the dimensions of a cubo
 1  
 1  
 2  
-**Sample Output
+**Sample Output**  
 [[0, 0, 0], [0, 0, 1], [0, 1, 0], [1, 0, 0], [1, 1, 1]]  
 
 
