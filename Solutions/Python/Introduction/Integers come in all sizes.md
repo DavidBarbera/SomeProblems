@@ -1,7 +1,7 @@
 ####Integers come in all sizes  
 *Score: 10*  
 **Problem**  
-Read four numbers, *a*, *b*, *c*, and *d*, and print the result of *a<sup>b<\sup>+c<sup>d<\sup>*.  
+Read four numbers, *a*, *b*, *c*, and *d*, and print the result of *a*<sup>*b*<\sup>*+c*<sup>*d*<\sup>.  
 **Solution**  
 ```python
 a=int(raw_input())
