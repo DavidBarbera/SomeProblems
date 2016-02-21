@@ -87,7 +87,7 @@ a[1] = temp0
 print a[0]
 print a[1]
 ```   
-s
+
 ####Loops  
 *Score: 10*  
 **Problem**  
