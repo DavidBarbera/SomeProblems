@@ -1,7 +1,7 @@
 | Domain                   | Score         |  
 |--------------------------|---------------|  
-| Algorithms                   | 120         |  
+| Algorithms                   | 150         |  
 | C++                   | 175         |  
 | Mathematics                   | 90         |  
 | Python                   | 225         |  
-| *Total*                   | *610*         |  
+| *Total*                   | *640*         |  
