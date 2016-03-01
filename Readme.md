@@ -1,5 +1,4 @@
-![alt text](https://github.com/DavidBarbera/SomeProblems/blob/master/Reporting/HKR.png "Hackerrank")
-#Hackerrank
+![alt text](https://github.com/DavidBarbera/SomeProblems/blob/master/Reporting/HKR.png "Hackerrank") #Hackerrank
 
 ###About Hackerrank  
 
@@ -11,7 +10,7 @@ The range of problems is diverse and is up to you what you want to do. There is 
 
 I attempted a few problems in Hackerrank for the last weeks and this report is what I have been able to solve so far. I started with very easy challenges to understand how Hackerrank works, and there it is one of the first challenges: getting the input to test your code. Getting the data is a bit unusual but you get used to sort that out eventually.
 
-Mainly, I used C++ and Python 2 to solve my challenges. If the challenges were about the programming language itself I consulted sites like: *www.python.org* or *en.cppreference.com*. Otherwise, I had to check online the theory behind the problem or try and try until I found the correct solution. This is the case of challenges in the Mathematics domain where successfull code beating all the test cases always depends on a particular mathematical fact. You may be able to code it right but without certain technical knowledge your code may run out of time trying to solve particular tests cases design to test you really crack the problem.
+Mainly, I used C++ and Python 2 to solve my challenges. If the challenges were about the programming language itself I consulted sites like: *www.python.org* or *en.cppreference.com*. Otherwise, I had to check online the theory behind the problem or try and try until I found the correct solution. This is the case of challenges like the ones in the Mathematics domain where successfull code beating all the test cases always depends on a particular mathematical fact. You may be able to code it right but without certain technical knowledge your code may run out of time trying to solve particular tests cases designed to test you really cracked the problem.
 
 I found useful to use Python 2 in all the challenges not specifically related to C++, as it can be very fast to code with.
 
