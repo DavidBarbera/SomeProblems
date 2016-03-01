@@ -1,4 +1,4 @@
-![alt text](https://github.com/DavidBarbera/SomeProblems/blob/master/Reporting/HKR.png "Hackerrank") #Hackerrank
+![alt text](https://github.com/DavidBarbera/SomeProblems/blob/master/Reporting/HKR.png "Hackerrank")  #Hackerrank
 
 ###About Hackerrank  
 
